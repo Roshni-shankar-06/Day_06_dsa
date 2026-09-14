@@ -1,1 +1,28 @@
-
+class Solution:
+    def searchMatrix(self, matrix: list[list[int]], target: int) -> bool:
+        if not matrix or not matrix[0]:
+            return False
+        
+        rows = len(matrix)
+        cols = len(matrix[0])
+        
+        # Initialize binary search boundaries
+        left = 0
+        right = (rows * cols) - 1
+        
+        while left <= right:
+            mid = left + (right - left) // 2
+            
+            # Map 1D index to 2D coordinates
+            row = mid // cols
+            col = mid % cols
+            current_val = matrix[row][col]
+            
+            if current_val == target:
+                return True
+            elif current_val < target:
+                left = mid + 1  # Search the right half
+            else:
+                right = mid - 1 # Search the left half
+                
+        return False
