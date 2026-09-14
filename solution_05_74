@@ -11,8 +11,6 @@ class Solution:
         right = (rows * cols) - 1
         
         while left <= right:
-            mid = left + (right - left) // 2
-            
-            # Map 1D index to 2D coordinates
+         
         
             
