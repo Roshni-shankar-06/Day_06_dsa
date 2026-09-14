@@ -10,11 +10,7 @@ class Solution {
     }
 
     private void dfs(int row, int n, boolean[] cols, boolean[] diag1, boolean[] diag2) {
-        if (row == n) {
-            count++;
-            return;
-        }
-        for (int col = 0; col < n; col++) {
+    
       
             
          
