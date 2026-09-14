@@ -8,4 +8,4 @@ class Solution:
                 # Left subtree has j nodes, right subtree has i - j - 1 nodes
                 dp[i] += dp[j] * dp[i - j - 1]
                 
-        return dp[n]
+      
