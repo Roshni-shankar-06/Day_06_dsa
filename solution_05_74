@@ -18,7 +18,4 @@ class Solution:
             col = mid % cols
             current_val = matrix[row][col]
             
-            if current_val == target:
-                return True
-            elif current_val < target:
-           
+            
