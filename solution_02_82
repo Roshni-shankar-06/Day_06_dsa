@@ -14,7 +14,4 @@ class Solution:
             else:
                 # No duplicate, move prev forward
                 prev = prev.next
-                
-            head = head.next
-            
-        return dummy.next
+         
