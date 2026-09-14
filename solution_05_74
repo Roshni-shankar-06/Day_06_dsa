@@ -14,8 +14,5 @@ class Solution:
             mid = left + (right - left) // 2
             
             # Map 1D index to 2D coordinates
-            row = mid // cols
-            col = mid % cols
-            current_val = matrix[row][col]
-            
+        
             
