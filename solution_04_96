@@ -6,6 +6,6 @@ class Solution:
         for i in range(2, n + 1):
             for j in range(i):
                 # Left subtree has j nodes, right subtree has i - j - 1 nodes
-                dp[i] += dp[j] * dp[i - j - 1]
+          
                 
       
