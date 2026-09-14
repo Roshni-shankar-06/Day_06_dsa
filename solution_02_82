@@ -12,6 +12,5 @@ class Solution:
                 # Point prev to the next non-duplicate node
                 prev.next = head.next
             else:
-                # No duplicate, move prev forward
-                prev = prev.next
+             
          
