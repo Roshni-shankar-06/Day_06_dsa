@@ -19,9 +19,4 @@ class Solution {
             int d2 = col - row + n - 1;
             if (cols[col] || diag1[d1] || diag2[d2]) continue;
             
-            cols[col] = diag1[d1] = diag2[d2] = true;
-            dfs(row + 1, n, cols, diag1, diag2);
-            cols[col] = diag1[d1] = diag2[d2] = false;
-        }
-    }
-}
+         
