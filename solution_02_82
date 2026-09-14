@@ -5,9 +5,6 @@ class Solution:
         
         while head:
             # Check if there are duplicates ahead
-            if head.next and head.val == head.next.val:
-                # Skip all nodes with the same value
-                while head.next and head.val == head.next.val:
-                    head = head.next
+          
                 
          
