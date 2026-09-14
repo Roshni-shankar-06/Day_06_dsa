@@ -21,8 +21,4 @@ class Solution:
             if current_val == target:
                 return True
             elif current_val < target:
-                left = mid + 1  # Search the right half
-            else:
-                right = mid - 1 # Search the left half
-                
-        return False
+           
