@@ -9,8 +9,5 @@ class Solution:
                 # Skip all nodes with the same value
                 while head.next and head.val == head.next.val:
                     head = head.next
-                # Point prev to the next non-duplicate node
-                prev.next = head.next
-            else:
-             
+                
          
