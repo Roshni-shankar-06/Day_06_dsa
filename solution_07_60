@@ -12,5 +12,10 @@ class Solution:
     for i in range(n - 1, -1, -1):
       idx = k // fact[i]
       ans.append(str(nums[idx]))
+      nums.pop(idx)
+      k %= fact[i]
+
+    return "".join(ans)
+
   
 
